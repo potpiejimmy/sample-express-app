@@ -5,7 +5,7 @@
  */
 
 var express = require('express');
-var schema = require('../models/schema.js');
+var schema = require('../models/schema');
 
 var Principal = schema.Principal;
 
