@@ -19,8 +19,9 @@ mongoose.connect(config.db.url, function (err) {
         console.log('Connection error', err);
     } else {
         console.log('Successfully connected to ' + config.db.url);
-        console.log('Opening route /');
-        app.use('/', principalAPI);
+        console.log('Opening route /rest');
+        //app.use(express.static('../sample-angular2-app'));
+        app.use('/rest', principalAPI);
     }
 });
 
